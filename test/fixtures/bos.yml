@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bos_quantity: 1
+  bos_discount: 1
+  bos_price: 1
+  bos_charge: MyString
+  bos_remark: MyText
+
+two:
+  bos_quantity: 1
+  bos_discount: 1
+  bos_price: 1
+  bos_charge: MyString
+  bos_remark: MyText

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunlightdata</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href = "/js/bootstrap/css/bootstrap-themes.css">
+  <link rel="stylesheet" href = "/js/bootstrap/css/bootstrap.min.css">
+  <script src = "/js/bootstrap/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<ul class="nav nav-pils nav-justified" role="tablist">
+  <li class = "active">
+    <%= link_to "Prodcut Sheet" , product_sheets_path%>
+  </li>
+  <li>
+    <%= link_to "Bill Of Sale" , bos_path%>
+  </li>
+</ul>
+<%= yield %>
+
+</body>
+</html>

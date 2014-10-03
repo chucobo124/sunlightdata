@@ -1,0 +1,26 @@
+<h1>Bill Of Sale</h1>
+<%= link_to "Create new Bill" , new_bos_path%>
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Sale Number</td>
+    <td>Product Name</td>
+    <td>Price of Item</td>
+    <td>Product Discount</td>
+    <td>Quantity</td>
+    <td>Product Amounts</td>
+    <td>Charge</td>
+  </tr>
+  <% @bos.each do |sheet|%>
+    <tr>
+      <td><%= sheet.created_at%></td>
+      <td><%= sheet.bos_number%></td>
+      <td>product_name</td>
+      <td>price_of_item</td>
+      <td><%= sheet.bos_discount%></td>
+      <td><%= sheet.bos_quantity%></td>
+      <td><%= sheet.bos_price%></td>
+      <td><%= sheet.bos_charge%></td>
+    </tr>
+  <% end %>
+</table>
